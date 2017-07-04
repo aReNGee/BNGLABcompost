@@ -60,6 +60,17 @@
                     <animation framecount="1" loop="0" name="Filled" pingpong="0" repeatcount="1" repeatto="0" sid="563785316224625" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
+                    <animation framecount="1" loop="0" name="BECOME_EMPTY" pingpong="0" repeatcount="1" repeatto="0" sid="323497215698620" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite" sid="934775809092789">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534323480432911" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
                 </animation-folder>
             </object-type>
         </object-folder>
