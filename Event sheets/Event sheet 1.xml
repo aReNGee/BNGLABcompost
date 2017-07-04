@@ -369,6 +369,9 @@
                                     <param id="0" name="Variable">Methane</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="-6" name="Set height" sid="742674350682099" type="MethaneBar">
+                                    <param id="0" name="Height">5.1*Methane</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -380,7 +383,7 @@
                 <event-block sid="701181348165304">
                     <conditions>
                         <condition id="17" name="On tap object" sid="101465565905820" type="Touch">
-                            <param id="0" name="Object">Sprite</param>
+                            <param id="0" name="Object">Rotatoes</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="115617294124699" type="System">
                             <param id="0" name="Variable">OnCooldown</param>
@@ -404,12 +407,12 @@
                                 <condition id="-7" name="Compare instance variable" sid="540208729933540" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">XXX</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.UpperLeft_x1</param>
+                                    <param id="2" name="Value">Rotatoes.UpperLeft_x1</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="377471156563609" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">YYY</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.UpperLeft_y1</param>
+                                    <param id="2" name="Value">Rotatoes.UpperLeft_y1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -434,12 +437,12 @@
                                 <condition id="-7" name="Compare instance variable" sid="198450353721340" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">XXX</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.BottomRight_x2</param>
+                                    <param id="2" name="Value">Rotatoes.BottomRight_x2</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="106191459850523" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">YYY</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.UpperLeft_y1</param>
+                                    <param id="2" name="Value">Rotatoes.UpperLeft_y1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -464,12 +467,12 @@
                                 <condition id="-7" name="Compare instance variable" sid="511967728964600" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">XXX</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.BottomRight_x2</param>
+                                    <param id="2" name="Value">Rotatoes.BottomRight_x2</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="896734659638632" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">YYY</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.BottomRight_y2</param>
+                                    <param id="2" name="Value">Rotatoes.BottomRight_y2</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -494,12 +497,12 @@
                                 <condition id="-7" name="Compare instance variable" sid="386084488183601" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">XXX</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.UpperLeft_x1</param>
+                                    <param id="2" name="Value">Rotatoes.UpperLeft_x1</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="981432102789146" type="MZ_CompostBlock">
                                     <param id="0" name="Instance variable">YYY</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Sprite.BottomRight_y2</param>
+                                    <param id="2" name="Value">Rotatoes.BottomRight_y2</param>
                                 </condition>
                             </conditions>
                             <actions>
