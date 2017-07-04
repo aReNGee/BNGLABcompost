@@ -4,11 +4,11 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="1" name="MZ_DECAYCONSTANT" sid="894075707781252" static="0" type="number">25</variable>
-        <variable constant="0" name="CompostX" sid="137141055985486" static="0" type="number">0</variable>
-        <variable constant="0" name="CompostY" sid="955446433779023" static="0" type="number">0</variable>
-        <event-group description="" sid="241694079163975" title="Compost Falling">
+        <variable constant="0" name="TempOpacity" sid="137141055985486" static="0" type="number">0</variable>
+        <variable constant="0" name="TempAnim" sid="955446433779023" static="0" type="text"></variable>
+        <event-group description="" disabled="1" sid="241694079163975" title="Compost Falling">
             <sub-events>
-                <event-block sid="895954458679331">
+                <event-block disabled="1" sid="895954458679331">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="830925411470474" type="System">
                             <param id="0" name="Interval (seconds)">1.0</param>
@@ -16,7 +16,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="917221902143181">
+                        <event-block disabled="1" sid="917221902143181">
                             <conditions>
                                 <condition id="-11" name="For Each" sid="371891111505516" type="System">
                                     <param id="0" name="Object">MZ_CompostBlock</param>
@@ -32,16 +32,16 @@
                             </conditions>
                             <actions>
                                 <action disabled="1" id="-9" name="Set value" sid="316039142064658" type="System">
-                                    <param id="0" name="Variable">CompostX</param>
+                                    <param id="0" name="Variable">TempOpacity</param>
                                     <param id="1" name="Value">MZ_CompostBlock.XXX</param>
                                 </action>
                                 <action disabled="1" id="-9" name="Set value" sid="851188164200303" type="System">
-                                    <param id="0" name="Variable">CompostY</param>
+                                    <param id="0" name="Variable">TempAnim</param>
                                     <param id="1" name="Value">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY-1)</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="429631498616493">
+                                <event-block disabled="1" sid="429631498616493">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="187034113109571" type="System">
                                             <param id="0" name="First value">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY-1,0)</param>
@@ -55,14 +55,14 @@
                                             <param id="1" name="From">1</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="631127238936420" type="System">
-                                            <param id="0" name="Variable">CompostY</param>
+                                            <param id="0" name="Variable">TempAnim</param>
                                             <param id="1" name="Value">5</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="952856933757506">
+                        <event-block disabled="1" sid="952856933757506">
                             <conditions />
                             <actions>
                                 <action id="-16" name="Wait" sid="990326422515244" type="System">
@@ -70,7 +70,7 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="314101217925364">
+                                <event-block disabled="1" sid="314101217925364">
                                     <conditions>
                                         <condition id="-11" name="For Each" sid="443088786171049" type="System">
                                             <param id="0" name="Object">MZ_CompostBlock</param>
@@ -86,16 +86,16 @@
                                     </conditions>
                                     <actions>
                                         <action disabled="1" id="-9" name="Set value" sid="725023522113567" type="System">
-                                            <param id="0" name="Variable">CompostX</param>
+                                            <param id="0" name="Variable">TempOpacity</param>
                                             <param id="1" name="Value">MZ_CompostBlock.XXX</param>
                                         </action>
                                         <action disabled="1" id="-9" name="Set value" sid="799463662719590" type="System">
-                                            <param id="0" name="Variable">CompostY</param>
+                                            <param id="0" name="Variable">TempAnim</param>
                                             <param id="1" name="Value">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY-1)</param>
                                         </action>
                                     </actions>
                                     <sub-events>
-                                        <event-block sid="480479112587580">
+                                        <event-block disabled="1" sid="480479112587580">
                                             <conditions>
                                                 <condition id="-8" name="Compare two values" sid="438820474411608" type="System">
                                                     <param id="0" name="First value">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY+1,0)</param>
@@ -109,7 +109,7 @@
                                                     <param id="1" name="From">1</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="502380805695741" type="System">
-                                                    <param id="0" name="Variable">CompostX</param>
+                                                    <param id="0" name="Variable">TempOpacity</param>
                                                     <param id="1" name="Value">2</param>
                                                 </action>
                                                 <action id="-16" name="Set opacity" sid="812605991722367" type="MZ_CompostBlock">
@@ -121,7 +121,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="116546810901910">
+                        <event-block disabled="1" sid="116546810901910">
                             <conditions />
                             <actions>
                                 <action id="-16" name="Wait" sid="787895504623417" type="System">
@@ -129,7 +129,7 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="527920605591988">
+                                <event-block disabled="1" sid="527920605591988">
                                     <conditions>
                                         <condition id="-11" name="For Each" sid="352248999321277" type="System">
                                             <param id="0" name="Object">MZ_CompostBlock</param>
@@ -144,7 +144,7 @@
                                             <param id="1" name="From">1</param>
                                         </action>
                                         <action disabled="1" id="-9" name="Set value" sid="119228127508023" type="System">
-                                            <param id="0" name="Variable">CompostX</param>
+                                            <param id="0" name="Variable">TempOpacity</param>
                                             <param id="1" name="Value">8</param>
                                         </action>
                                     </actions>
@@ -202,9 +202,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="640692200434668" title="Compost Decay">
+        <event-group description="" disabled="1" sid="640692200434668" title="Compost Decay">
             <sub-events>
-                <event-block sid="299625514157037">
+                <event-block disabled="1" sid="299625514157037">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="840767714144339" type="System">
                             <param id="0" name="Interval (seconds)">1.0</param>
@@ -212,7 +212,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="608213271843684">
+                        <event-block disabled="1" sid="608213271843684">
                             <conditions>
                                 <condition id="-11" name="For Each" sid="263349386746131" type="System">
                                     <param id="0" name="Object">MZ_CompostBlock</param>
@@ -223,16 +223,16 @@
                             </conditions>
                             <actions>
                                 <action disabled="1" id="-9" name="Set value" sid="996132065177336" type="System">
-                                    <param id="0" name="Variable">CompostX</param>
+                                    <param id="0" name="Variable">TempOpacity</param>
                                     <param id="1" name="Value">MZ_CompostBlock.XXX</param>
                                 </action>
                                 <action disabled="1" id="-9" name="Set value" sid="480754320907365" type="System">
-                                    <param id="0" name="Variable">CompostY</param>
+                                    <param id="0" name="Variable">TempAnim</param>
                                     <param id="1" name="Value">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY-1)</param>
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="692090387373926">
+                                <event-block disabled="1" sid="692090387373926">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="554927228044286" type="MZ_CompostBlock">
                                             <param id="0" name="Instance variable">YYY</param>
@@ -246,7 +246,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="318271539085686">
+                                <event-block disabled="1" sid="318271539085686">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="343955274547778" type="System" />
                                         <condition id="-7" name="Compare instance variable" sid="298139647250844" type="MZ_CompostBlock">
@@ -266,7 +266,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="167668390678539">
+                                <event-block disabled="1" sid="167668390678539">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="308755974093268" type="System" />
                                         <condition id="-7" name="Compare instance variable" sid="145413385421858" type="MZ_CompostBlock">
@@ -286,7 +286,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="223313651943674">
+                                <event-block disabled="1" sid="223313651943674">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="212950067433696" type="System" />
                                         <condition id="-7" name="Compare instance variable" sid="365098158135765" type="MZ_CompostBlock">
@@ -306,7 +306,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="846418664791086">
+                                <event-block disabled="1" sid="846418664791086">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="790786562872855" type="System" />
                                     </conditions>
@@ -317,6 +317,128 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="886178490061048" title="Rotatoes">
+            <sub-events>
+                <event-block sid="701181348165304">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="101465565905820" type="Touch">
+                            <param id="0" name="Object">Sprite</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>This is the upper left block of the sequence. We replace it with the upper right block.</comment>
+                        <event-block sid="316790473130817">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="649548636595009" type="System">
+                                    <param id="0" name="Object">MZ_CompostBlock</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="540208729933540" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">XXX</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.UpperLeft_x1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="377471156563609" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">YYY</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.UpperLeft_y1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="909989986520219" type="MZ_CompostBlock">
+                                    <param id="0" name="Opacity">MZ_CompostPile.At(MZ_CompostBlock.XXX+1,MZ_CompostBlock.YYY,1)</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="513959028742805" type="MZ_CompostBlock">
+                                    <param id="0" name="Animation">MZ_CompostPile.At(MZ_CompostBlock.XXX+1,MZ_CompostBlock.YYY,0)</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>This is the upper right block of the sequence. We replace it with the lower right block.</comment>
+                        <event-block sid="189340901977029">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="543643630541597" type="System">
+                                    <param id="0" name="Object">MZ_CompostBlock</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="198450353721340" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">XXX</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.BottomRight_x2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="106191459850523" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">YYY</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.UpperLeft_y1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="568271332112367" type="MZ_CompostBlock">
+                                    <param id="0" name="Opacity">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY-1,1)</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="837541662417432" type="MZ_CompostBlock">
+                                    <param id="0" name="Animation">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY-1,0)</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>This is the lower right block of the sequence. We replace it with the lower left block.</comment>
+                        <event-block sid="883174051486456">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="124023864352968" type="System">
+                                    <param id="0" name="Object">MZ_CompostBlock</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="511967728964600" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">XXX</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.BottomRight_x2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="896734659638632" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">YYY</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.BottomRight_y2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="834516961450015" type="MZ_CompostBlock">
+                                    <param id="0" name="Opacity">MZ_CompostPile.At(MZ_CompostBlock.XXX-1,MZ_CompostBlock.YYY,1)</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="693229977318112" type="MZ_CompostBlock">
+                                    <param id="0" name="Animation">MZ_CompostPile.At(MZ_CompostBlock.XXX-1,MZ_CompostBlock.YYY,0)</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>This is the lower left block of the sequence. We replace it with the upper left block.</comment>
+                        <event-block sid="798026742281511">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="129899887841602" type="System">
+                                    <param id="0" name="Object">MZ_CompostBlock</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="386084488183601" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">XXX</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.UpperLeft_x1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="981432102789146" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">YYY</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite.BottomRight_y2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="388291363650615" type="MZ_CompostBlock">
+                                    <param id="0" name="Opacity">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY+1,1)</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="560441911772605" type="MZ_CompostBlock">
+                                    <param id="0" name="Animation">MZ_CompostPile.At(MZ_CompostBlock.XXX,MZ_CompostBlock.YYY+1,0)</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

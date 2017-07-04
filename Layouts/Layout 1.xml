@@ -136,7 +136,7 @@
                 <instance type="MZ_CompostBlock" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Empty</initial-animation>
+                        <initial-animation>Filled</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -162,7 +162,7 @@
                 <instance type="MZ_CompostBlock" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Empty</initial-animation>
+                        <initial-animation>Filled</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -188,7 +188,7 @@
                 <instance type="MZ_CompostBlock" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>BECOME_EMPTY</initial-animation>
+                        <initial-animation>Filled</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -214,7 +214,7 @@
                 <instance type="MZ_CompostBlock" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Empty</initial-animation>
+                        <initial-animation>Filled</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -370,7 +370,7 @@
                 <instance type="MZ_CompostBlock" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Filled</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -474,7 +474,7 @@
                 <instance type="MZ_CompostBlock" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Filled</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -578,7 +578,7 @@
                 <instance type="MZ_CompostBlock" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Filled</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -686,11 +686,17 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <UpperLeft_x1>0</UpperLeft_x1>
+                        <UpperLeft_y1>4</UpperLeft_y1>
+                        <BottomRight_x2>1</BottomRight_x2>
+                        <BottomRight_y2>3</BottomRight_y2>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>800</x>
-                        <y>315</y>
+                        <x>828</x>
+                        <y>310</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
