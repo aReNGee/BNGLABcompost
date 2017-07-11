@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors />
@@ -59,11 +60,11 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                     <animation framecount="5" loop="0" name="Filled" pingpong="0" repeatcount="1" repeatto="0" sid="563785316224625" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\BNGLABcompost\Files\compost1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\BNGLABcompost\Files\compost2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\BNGLABcompost\Files\compost3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\BNGLABcompost\Files\compost4.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\BNGLABcompost\Files\compost5.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="BECOME_EMPTY" pingpong="0" repeatcount="1" repeatto="0" sid="323497215698620" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -147,6 +148,11 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Text">
+            <object-type name="Ploos" sid="695641493167899">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-type name="Touch" sid="331154185948303">

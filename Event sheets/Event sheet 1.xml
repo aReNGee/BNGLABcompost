@@ -374,6 +374,12 @@
                                 <action id="-6" name="Set height" sid="742674350682099" type="MethaneBar">
                                     <param id="0" name="Height">5.1*Methane</param>
                                 </action>
+                                <action id="-3" name="Create object" sid="798937261406374" type="System">
+                                    <param id="0" name="Object to create">Ploos</param>
+                                    <param id="1" name="Layer">&quot;FloatText&quot;</param>
+                                    <param id="2" name="X">MZ_CompostBlock.X</param>
+                                    <param id="3" name="Y">MZ_CompostBlock.Y</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -692,54 +698,54 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="512216839130063" title="Lockout">
-            <sub-events>
-                <event-block sid="462641096838339">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="147230050189228" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="216419250666154" type="System">
-                            <param id="0" name="Variable">OnCooldown</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="381595506523567" type="System">
-                            <param id="0" name="Variable">OnCooldown</param>
-                            <param id="1" name="Value">10</param>
-                        </action>
-                        <action id="-6" name="Set height" sid="519688128482664" type="CooldownBlock">
-                            <param id="0" name="Height">OnCooldown</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="588549775191039">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="661569954354899" type="System">
-                            <param id="0" name="Interval (seconds)">0.05</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="120870704353885" type="System">
-                            <param id="0" name="Variable">OnCooldown2</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="412102414552257" type="System">
-                            <param id="0" name="Variable">OnCooldown2</param>
-                            <param id="1" name="Value">10</param>
-                        </action>
-                        <action id="-6" name="Set height" sid="711490482264564" type="CooldownBlock2">
-                            <param id="0" name="Height">OnCooldown2</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="because i must" sid="568017218256079" title="BOTH arrows">
             <sub-events>
+                <event-group description="" sid="512216839130063" title="Lockout">
+                    <sub-events>
+                        <event-block sid="462641096838339">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="147230050189228" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="216419250666154" type="System">
+                                    <param id="0" name="Variable">OnCooldown</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="381595506523567" type="System">
+                                    <param id="0" name="Variable">OnCooldown</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="519688128482664" type="CooldownBlock">
+                                    <param id="0" name="Height">OnCooldown</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="588549775191039">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="661569954354899" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="120870704353885" type="System">
+                                    <param id="0" name="Variable">OnCooldown2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="412102414552257" type="System">
+                                    <param id="0" name="Variable">OnCooldown2</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="711490482264564" type="CooldownBlock2">
+                                    <param id="0" name="Height">OnCooldown2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="921393397666450">
                     <conditions>
                         <condition id="17" name="On tap object" sid="269760074551356" type="Touch">
@@ -788,6 +794,102 @@
                             <param id="0" name="Animation">&quot;Clicked&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Falling Leaves (on the ground)" sid="450701905728662" title="Falling Leaves, Falling Leaves">
+            <sub-events>
+                <variable constant="0" name="DropHere" sid="450434141171867" static="0" type="number">0</variable>
+                <event-block sid="994846934929828">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="440649727286490" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="751420915778784" type="System">
+                            <param id="0" name="Variable">DropHere</param>
+                            <param id="1" name="Value">choose(0,1,2,3,4)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block disabled="1" sid="392027623322685">
+                            <conditions>
+                                <condition id="-23" name="While" sid="698681948369226" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="672967258590005" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">XXX</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">DropHere</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="969775318872508" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">YYY</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="503210206709357" type="MZ_CompostBlock">
+                                    <param id="0" name="Animation">&quot;Filled&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="862022627593149" type="System">
+                                    <param id="0" name="Variable">DropHere</param>
+                                    <param id="1" name="Value">choose(0,1,2,3,4)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="706080556572775">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="917101627697596" type="System">
+                                    <param id="0" name="Object">MZ_CompostBlock</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="506822657707901" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">XXX</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">DropHere</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="979615195418429" type="MZ_CompostBlock">
+                                    <param id="0" name="Instance variable">YYY</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="267627869242449" type="MZ_CompostBlock">
+                                    <param id="0" name="Animation">&quot;Filled&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="434250375239519" title="Being Fancy (+1)">
+            <sub-events>
+                <event-block sid="104735798674280">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="327435035642493" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="467264753173095" type="Ploos">
+                            <param id="0" name="Angle">-90</param>
+                            <param id="1" name="Distance">5</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="986572574631116" type="Ploos">
+                            <param id="0" name="Opacity">Ploos.Opacity-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="879950241181977">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="605716292102386" type="Ploos">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="523544774697789" type="Ploos" />
                     </actions>
                 </event-block>
             </sub-events>
